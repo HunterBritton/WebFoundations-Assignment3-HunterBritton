@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -38,6 +38,75 @@
 			<main>
 				<h1>Order Event Tickets</h1>
 				<!-- The form starts here... -->
+				<form name="order_form" method="post" action="place_order.html">
+					<fieldset id="MembInfo">
+						<legend>Member Information</legend>
+						<label for="email">E-Mail:</label>
+						<input type="text" name="email" id="email"><br>
+
+						<label for="first_name">First Name:</label>
+						<input type="text" name="first_name" id="first_name"><br>
+
+						<label for="last_name">Last Name:</label>
+						<input type="text" name="last_name" id="last_name"><br>
+
+						<label for="address">Address:</label>
+						<input type="text" name="address" id="address"><br>
+
+						<label for="city">City:</label>
+						<input type="text" name="city" id="city"><br>
+
+						<label for="province">Province:</label>
+						<input type="text" name="province" id="province"><br>
+
+						<label for="postal_code">Postal Code:</label>
+						<input type="text" name="postal_code" id="postal_code"><br>
+
+						<label for="phone">Phone Number:</label>
+						<input type="text" name="phone" id="phone"><br>
+					</fieldset>
+
+					<fieldset id="orderInfo">
+						<legend>Ordering Information</legend>
+						<label for="eventType">Event:</label>
+						<select name="eventType" id="eventType">
+							<option value="Cookie Decoration Contest">Cookie Decoration Contest</option>
+							<option value="Tree Decoration Contest">Tree Decoration Contest</option>
+							<option value="Gift of Light Ride-Along">Gift of Light Ride-Along</option>
+							<option value="Breakfast with Santa">Breakfast with Santa</option>
+						</select><br>
+
+						<select name="orderType" id="oderType">
+							<option value="Member Package">Member Package</option>
+							<option value="Donor Package">Donor Package</option>
+							<option value="Single Tickets">Single Tickets</option>
+						</select><br>
+
+						<label for="numTickets">Number of Tickets:</label>
+						<input type="text" name="numTickets" id="numTickets" placeholder="Number of single tickets"><br>
+					</fieldset>
+
+					<fieldset id="paymentMethod">
+
+					</fieldset>
+
+					<fieldset id="ccInfo">
+						<select name="cardType" id="cardType">
+							<option value="Visa">Visa</option>
+							<option value="Master Card">Master Card</option>
+							<option value="Discover">Discover</option>
+						</select><br>
+
+						<label for="cardNum"></label>
+						<input type="text" name="cardNum" id="cardNum" placeholder="16 digits">
+					</fieldset>
+
+
+					
+
+
+					<input type="submit" value="submit">
+				</form>
 				
 			</main>
 			
