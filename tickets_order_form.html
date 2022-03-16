@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html> <!--This is the webage used to make orders-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -39,7 +39,7 @@
 				<h1>Order Event Tickets</h1>
 				<!-- The form starts here... -->
 				<form name="order_form" method="post" action="place_order.html">
-					<fieldset id="membInfo">
+					<fieldset id="membInfo"> <!--Houses all member info inputs-->
 						<legend>Member Information</legend>
 						<label for="email">E-Mail:</label>
 						<input type="email" name="email" id="email" autofocus><br>
@@ -66,7 +66,7 @@
 						<input type="tel" name="phone" id="phone" title="Must be in pattern xxx-xxx-xxxx as all numbers" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="999-999-9999"><br>
 					</fieldset>
 
-					<fieldset id="orderInfo">
+					<fieldset id="orderInfo"><!--Houses all order info inputs-->
 						<legend>Ordering Information</legend>
 						<label for="eventType">Event:</label>
 						<select name="eventType" id="eventType">
@@ -87,7 +87,7 @@
 						<input type="number" name="numTickets" id="numTickets" min="1" max="99" title="Must be 1-99" pattern="[1-9][0-9]" placeholder="Number of single tickets"><br>
 					</fieldset>
 
-					<fieldset id="paymentMethod">
+					<fieldset id="paymentMethod"> <!--Houses all payment method inputs-->
 						<legend>Payment Method</legend>	
 						<input type="radio" name="paymentMethod" id="billMe">
 						<label for="billMe">Bill me</label>
@@ -96,7 +96,7 @@
 						<label for="creditCard">Credit Card</label>
 					</fieldset>
 
-					<fieldset id="ccInfo">
+					<fieldset id="ccInfo"> <!--Houses all credit card info inputs-->
 						<legend>Credit Card Information</legend>
 
 						<label for="cardType">Card Type:</label>
@@ -135,8 +135,8 @@
 						</select> <br>
 					</fieldset>
 
-					<br><br><br>
-					<fieldset id="submitOrder">
+					<br>
+					<fieldset id="submitOrder"> <!--Houses submit and reset fields-->
 						<Legend>Submit Your Order</Legend>
 						<input type="submit" value="Submit">
 						<input type="reset" value="Reset">

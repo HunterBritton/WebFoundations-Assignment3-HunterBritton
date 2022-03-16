@@ -183,7 +183,12 @@ footer p {
 	text-align: center;
 }
 
-fieldset{
+
+
+
+/* START OF MY CSS I ADDED*/
+
+fieldset{ /* Sets spacing above and below each fieldset*/
 	margin: 20px 0px; /*Sets top and bottom margin*/
 	padding-bottom: 20px;
 }
@@ -193,34 +198,34 @@ legend{
 	color: gray;
 	font-weight: bold;
 	font-size: 85%;
-	text-align: left;
+	text-align: left; /*Overides other rules if necessary because of higher specificity*/
 }
 
 label, input, select{
 	font-size: 90%;
 }
 
-label {
+label { /*Aligns labels in the right spot*/
 	float: left;
 	text-align: right;
-	width: 200px ;
+	width: 200px;
 	margin:2px 0px;
 	margin-right: 5px;
 }
 
-input, select{
+input, select{ /*Aligns the inputs in the right spot*/
 	width: 15em;
 	text-align: Left;
 	margin-left: 8px;
 	margin:2px 0px;
 }
 
-input[type="radio"]{ /*Styles all radio buttons*/
+input[type="radio"]{ /*Styles all radio buttons becuase they are laid out differently*/
 	width: 15px;
 	margin-left: 35px;
 }
 
-#paymentMethod label{
+#paymentMethod label{ /*Styles the labels for the radio buttons to be in line*/
 	float: none;
 	width: 5px;
 	text-align: left;
