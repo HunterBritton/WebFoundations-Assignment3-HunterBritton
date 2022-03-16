@@ -110,7 +110,7 @@
 						<input type="text" name="cardNum" id="cardNum" title="Must be 16 digits no '-'" pattern="\d{16}" placeholder="16 digits"><br>
 
 						<label for="ExpirationDate">Expiration Date:</label>
-						<select name="expMonth" id="exmpMonth">
+						<select name="expMonth" id="expMonth">
 							<option value="January">January</option>
 							<option value="February">February</option>
 							<option value="March">March</option>
@@ -139,8 +139,11 @@
 					
 
 					<br><br><br>
-					<input type="submit" value="submit">
-					<input type="reset" value="reset">
+					<fieldset id="submitOrder">
+						<Legend>Submit Your Order</Legend>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</fieldset>
 				</form>
 				
 			</main>
