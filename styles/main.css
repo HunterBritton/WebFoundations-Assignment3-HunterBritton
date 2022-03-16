@@ -182,3 +182,56 @@ footer p {
 	font-size: 80%;
 	text-align: center;
 }
+
+fieldset{
+	margin: 20px 0px; /*Sets top and bottom margin*/
+	padding-bottom: 20px;
+}
+
+legend{
+	margin-bottom: 10px;
+	color: gray;
+	font-weight: bold;
+	font-size: 85%;
+	text-align: left;
+}
+
+label, input, select{
+	font-size: 90%;
+}
+
+label {
+	float: left;
+	text-align: right;
+	width: 200px ;
+}
+
+input, select{
+	width: 15em;
+	text-align: Left;
+	margin-left: 5px;
+}
+
+input[type="radio"]{ /*Styles all radio buttons*/
+	width: 15px;
+	margin-left: 35px;
+}
+
+#paymentMethod label{
+	float: none;
+	width: 5px;
+	text-align: left;
+}
+
+#expMonth, #expYear{
+	width:7em;
+}
+
+#submitOrder{
+	text-align: center;
+}
+
+#submitOrder input{
+	width:9em;
+	text-align: center;
+}
