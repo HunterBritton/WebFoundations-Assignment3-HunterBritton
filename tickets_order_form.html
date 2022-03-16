@@ -39,28 +39,28 @@
 				<h1>Order Event Tickets</h1>
 				<!-- The form starts here... -->
 				<form name="order_form" method="post" action="place_order.html">
-					<fieldset id="MembInfo">
+					<fieldset id="membInfo">
 						<legend>Member Information</legend>
 						<label for="email">E-Mail:</label>
 						<input type="email" name="email" id="email" autofocus><br>
 
 						<label for="first_name">First Name:</label>
-						<input type="text" name="first_name" id="first_name"><br>
+						<input type="text" name="first_name" id="first_name" required><br>
 
 						<label for="last_name">Last Name:</label>
-						<input type="text" name="last_name" id="last_name"><br>
+						<input type="text" name="last_name" id="last_name" required><br>
 
 						<label for="address">Address:</label>
 						<input type="text" name="address" id="address"><br>
 
 						<label for="city">City:</label>
-						<input type="text" name="city" id="city"><br>
+						<input type="text" name="city" id="city" required><br>
 
 						<label for="province">Province:</label>
-						<input type="text" name="province" id="province" title="Must be a 2 character prov code" pattern="[A-Za-z]{2}"placeholder=2-character code"><br>
+						<input type="text" name="province" id="province" title="Must be a 2 character prov code" pattern="[A-Za-z]{2}" placeholder="2-character code" required><br>
 
 						<label for="postal_code">Postal Code:</label>
-						<input type="text" name="postal_code" id="postal_code" title="Must be 6 digits" pattern="[A-Za-z0-9]{6}" placeholder="6 characters"><br>
+						<input type="text" name="postal_code" id="postal_code" title="Must be 6 digits" pattern="[A-Za-z0-9]{6}" placeholder="6 characters" required><br>
 
 						<label for="phone">Phone Number:</label>
 						<input type="tel" name="phone" id="phone" title="Must be in pattern xxx-xxx-xxxx as all numbers" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="999-999-9999"><br>
@@ -107,7 +107,7 @@
 						</select><br>
 
 						<label for="cardNum">Card Number:</label>
-						<input type="text" name="cardNum" id="cardNum" title="Must be 16 digits no '-'" pattern="\d{16}" placeholder="16 digits"><br>
+						<input type="text" name="cardNum" id="cardNum" title="Must be 16 digits no '-'" pattern="\d{16}" placeholder="16 digits" required><br>
 
 						<label for="ExpirationDate">Expiration Date:</label>
 						<select name="expMonth" id="expMonth">
@@ -134,9 +134,6 @@
 							<option value="2027">2027</option>
 						</select> <br>
 					</fieldset>
-
-
-					
 
 					<br><br><br>
 					<fieldset id="submitOrder">
